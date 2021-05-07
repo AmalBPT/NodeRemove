@@ -32,27 +32,7 @@ namespace NodeRemove
         }
         static Node<int> RemoveOdd (Node<int> head)
         {
-            Node<int> prev = null;
-            Node<int> first = head;
-            while (first!=null && first.GetValue() %2==1)
-            {
-                first = first.GetNext();
-            }
-            head = first;
-            while (head!=null)
-            {
-                while (head!= null && head.GetValue()%2==0)
-                {
-                    prev = head;
-                    head = head.GetNext();
-                }
-                if (head!= null)
-                { 
-                prev.SetNext(head.GetNext());
-                head = head.GetNext();
-                }
-            }
-            return first;
+            throw new NotImplementedException();
         }
         static Node<int> RemoveAt (Node<int> head, int place)
         {
